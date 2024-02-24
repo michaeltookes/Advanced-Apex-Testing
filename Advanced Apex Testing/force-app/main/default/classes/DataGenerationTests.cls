@@ -53,4 +53,3 @@ static void testAtTestSetupMethodsRule() {
 }
 
 }
-
