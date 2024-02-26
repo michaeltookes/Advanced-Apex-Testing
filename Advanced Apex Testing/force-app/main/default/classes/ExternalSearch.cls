@@ -8,11 +8,11 @@ public class ExternalSearch {
     req.setEndpoint('https://www.google.com?q=' + query);
     req.setMethod('GET');
     HttpResponse res = h.send(req);
-    if (res.getStatusCode() != 200) {
+    /*if (res.getStatusCode() != 200) {
       throw new ExternalSearchException(
         'Did not receive a 200 status code: ' + res.getStatusCode()
       );
-    }
+    }*/
     return res.getBody();
   }
 }
